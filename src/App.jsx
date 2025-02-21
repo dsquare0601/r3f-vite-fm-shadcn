@@ -2,6 +2,7 @@ import { useState } from "react";
 import viteLogo from "/vite.svg";
 import reactLogo from "./assets/react.svg";
 import "./index.css";
+import { Button } from "./components/ui/button";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -31,12 +32,12 @@ export default function App() {
       <h1 className="text-4xl font-extrabold mt-8">Vite + React</h1>
 
       <div className="flex flex-col mt-6 p-6 bg-gray-800 rounded-lg shadow-lg items-center justify-center">
-        <button
+        <Button
           onClick={() => setCount((count) => count + 1)}
-          className="px-6 py-2 items-center justify-center bg-purple-500 rounded-lg text-lg font-semibold hover:bg-purple-600 transition-all"
+          className="cursor-pointer px-6 py-2 items-center justify-center bg-purple-500 rounded-lg text-lg font-semibold hover:bg-purple-600 transition-all"
         >
           Count is {count}
-        </button>
+        </Button>
         <p className="mt-3 text-gray-300">
           Edit <code className="text-yellow-400 font-mono">src/App.jsx</code>{" "}
           and save to test HMR.
